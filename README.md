@@ -22,6 +22,7 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
   Principales problemas de datos:
   
 -Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente.
+
 -Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una perdida de del 8% de los datos.
 
 
