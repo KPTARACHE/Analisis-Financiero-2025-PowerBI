@@ -21,9 +21,9 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
 
   ⚠️Principales problemas de datos:
   
-    - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente.
+  - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente.
 
-    - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una perdida de del 8% de los datos.
+  - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una perdida de del 8% de los datos.
 
   🎯💡Objetivo del proyecto y plan de acción
   
@@ -31,13 +31,19 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
     
 💡 Para lograr el objetivo se ejecutó lo siguiente:
 
-    - Carga de BBDD a Power BI
-    - Limpieza de datos en Power Query
-    - Creación de tabla calendario y medidas DAX
-    - Elaboración de Dashboard
-    - Análisis financiero de resultado
-    - Resultados
-    - Conclusión y recomendaciones
+  - Carga de BBDD a Power BI
+    
+  - Limpieza de datos en Power Query
+    
+   - Creación de tabla calendario y medidas DAX
+    
+   - Elaboración de Dashboard
+    
+  - Análisis financiero de resultado
+    
+   - Resultados
+
+  - Conclusión y recomendaciones
     
 ---
 
@@ -107,16 +113,9 @@ Tabla de hechos facturación (FactFinanzasRaw) relacionada a las dimensiones de 
 
 ## 📐Medidas DAX
 
+<img width="197" height="299" alt="Medidas" src="https://github.com/user-attachments/assets/a2e0dd03-8828-4971-9529-478860de6a61" />
 
-
-
-
-
-
-
-
-
-
+Se crearon 168 medidas agrupadas por carpetas para una mejor organización y visualización de datos 
 
 ## 📊📈Dashboard
 
@@ -136,9 +135,9 @@ Variación 2025 vs 2024
 
 ## 📊Resultados Financieros 
 
-    ## Tarjetas KPI´s a destacar 
+  ## Tarjetas KPI´s a destacar 
 
-    <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
+  <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
 
 <img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/9751631e-c58a-4b01-ac4e-28b3627aedd6" />
 <img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/d36cd882-65ca-4f04-b75d-a34cb95b5976" />
@@ -165,39 +164,44 @@ Variación 2025 vs 2024
 
 - Los ingresos mantienen un comportamiento similar sin variaciones abruptas
   
-- Hay que destacar las caída mas significativas en mayo, junio y diciembre, bajo los 0,6MILL pero es importante mencionar que puede ser por estacionalidad debido a que tanto junio como diciembre están mapeadas así en presupuesto
+- Hay que destacar las caída mas significativas en mayo, junio y diciembre, bajo los 0,6 mill. Pero es importante mencionar que puede ser por estacionalidad debido a que tanto junio como diciembre están mapeadas así en presupuesto
   
-- Enero presenta una caía significativa vs presupuesto pero con crecimiento vs 2024
+- Enero presenta una caída significativa vs presupuesto pero con crecimiento vs 2024
 
-      ## Estado de resultado
+  ## Estado de resultado
   
 <img width="660" height="200" alt="P L" src="https://github.com/user-attachments/assets/514e31f0-6b82-4b2f-b5bc-335784cf4f65" />
 
--  A pesar de que ninguna línea del P&L cumple con el presupuesto asignado la salud financiera del negocio es excelente
+-  A pesar de que ninguna línea del P&L cumple con el presupuesto asignado, la salud financiera del negocio es excelente
   
 -  Cuenta con excelente margen, EBITDA y Utilidad
   
--  Revisando las variaciones vs 2024 también se detecta que hay crecimiento en ventas y margen bruto y a pesar que el EBITDA y Utilidad disminuyen 1 punto aproximadamente cada uno, la salud financiera sigue siendo muy buena
+-  Revisando las variaciones vs 2024 también se detecta que hay crecimiento en ventas y margen bruto y a pesar de que el EBITDA y Utilidad disminuyen 1 punto aproximadamente cada uno, la salud financiera sigue siendo muy buena
 
-## 📍Insight claves del negocio
+## 📍Insights clave del negocio
 
 - Crecimiento vs 2024 en venta +3,6% pero caída en EBITDA -0,6% y utilidad Neta -1,2%, a pesar de generar mayores ingresos estos se ven absorbidos casi en su totalidad por mayor costo, sin embargo la salud financiera continua siendo buena
 
-- EL presupuesto fue extremadamente optimista esperando un crecimiento de mas de 5% en utilidad pero las ventas no alcanzaron la meta y los costos por el contrario fueron mayores.
+- El presupuesto fue extremadamente optimista esperando un crecimiento de más de 5% en utilidad pero las ventas no alcanzaron la meta y los costos por el contrario fueron mayores.
 
-- Los sobregastos mas significativos fueron en los centros de costos de Tecnología +29% y seguido de marketing +30%
+- Los sobregastos más significativos fueron en los centros de costos de Tecnología (+29%) y seguido de marketing (+30%)
  
 ---
 
 ## 📋Conclusiones
 
-La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura — principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logro retribuir con el incremento de venta esperado para compensar este sobregasto; El presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
+La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura — principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logró retribuir con el incremento de ventas esperado para compensar este sobregasto; El presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
 
 ---
 
 ## 💭Recomendaciones
 
-- 
+- Revisar a fondo gastos en Tecnología y Marketing (Gastos no presupuestados, relación costo/beneficio, si es gasto recurrente que se debe agregar al 2026 o esta relacionado a un proyecto específico)
+  
+- Replantear supuestos utilizados para la elaboración del presupuesto 2025
+
+- Crear escenarios de sensibilidad que permitan revisar si estamos frente a un mal pronóstico real o frente a un escenario poco realista.
+
 
 
 
