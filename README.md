@@ -139,9 +139,6 @@ Variación 2025 vs 2024
 
   <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
 
-<img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/9751631e-c58a-4b01-ac4e-28b3627aedd6" />
-<img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/d36cd882-65ca-4f04-b75d-a34cb95b5976" />
-
 - Margen bruto de 71% esto es un indicativo muy bueno para un negocio donde sus costos directos representan solo el 29% de la venta generando gran utilidad
 
 - EBITDA de 4MILL con una venta de 8MILL esto excelente la empresa tiene capacidad para cubrir aumento de costos o caída en venta
