@@ -17,13 +17,13 @@
 
 ## 📑Contexto del negocio
 
-Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita un análisis financiero que permita identificar las posibles causas para la toma de deciciones de la gerencia. 
+Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita un análisis financiero que permita identificar las posibles causas para la toma de decisiones de la gerencia. 
 
   ⚠️Principales problemas de datos:
-  
+
   - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente.
 
-  - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una perdida de del 8% de los datos.
+  - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una pérdida del 8% de los datos.
 
   🎯💡Objetivo del proyecto y plan de acción
   
@@ -47,7 +47,7 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
     
 ---
 
-## 🗂️Resultados Tecnicos
+## 🗂️Resultados Técnicos
 
   ## 🔍Limpieza de datos
 
@@ -151,9 +151,9 @@ Variación 2025 vs 2024
 
 - El centro de costo con mayor gasto es "Tecnología" con 0,84MILL
   
-- Los centro de costo con menor gasto son "Administración y Dirección con 0,58MILL
+- Los centros de costos con menor gasto son "Administración y Dirección con 0,58MILL
   
-- Las variaciones entre centro de costo se muestran prudente y equilibradas en relación a la venta 
+- Las variaciones entre centro de costo se muestran prudentes y equilibradas en relación a la venta 
 
     ## Evolución mensual de ingresos
 
@@ -161,7 +161,7 @@ Variación 2025 vs 2024
 
 - Los ingresos mantienen un comportamiento similar sin variaciones abruptas
   
-- Hay que destacar las caída mas significativas en mayo, junio y diciembre, bajo los 0,6 mill. Pero es importante mencionar que puede ser por estacionalidad debido a que tanto junio como diciembre están mapeadas así en presupuesto
+- Hay que destacar las caídas más significativas en mayo, junio y diciembre, bajo los 0,6 mill. Pero es importante mencionar que puede ser por estacionalidad (junio y diciembre) debido a que están mapeadas así en presupuesto
   
 - Enero presenta una caída significativa vs presupuesto pero con crecimiento vs 2024
 
