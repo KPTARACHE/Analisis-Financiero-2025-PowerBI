@@ -137,21 +137,21 @@ Variación 2025 vs 2024
 
   ## Tarjetas KPI´s a destacar 
 
-  <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
+ <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
 
 - Margen bruto de 71% esto es un indicativo muy bueno para un negocio donde sus costos directos representan solo el 29% de la venta generando gran utilidad
 
-- EBITDA de 4MILL con una venta de 8MILL esto excelente la empresa tiene capacidad para cubrir aumento de costos o caída en venta
+- EBITDA de 4 mill. con una venta de 8 mill. esto es excelente la empresa tiene capacidad para cubrir aumento de costos o caída en ventas
 
-- Utilidad Neta de 4MILL es decir, la depreciación, intereses y amortización no representan gran impacto dentro del resultado
+- Utilidad Neta de 4 mill. es decir, la depreciación, intereses y amortización no representan gran impacto dentro del resultado
 
     ## Gastos por centro de costo 
 
 <img width="351" height="189" alt="Gastos por centro de costo" src="https://github.com/user-attachments/assets/a6cb0d58-83f9-4f01-bec8-1496c195cb3d" />
 
-- El centro de costo con mayor gasto es "Tecnología" con 0,84MILL
+- El centro de costo con mayor gasto es "Tecnología" con 0,84 mill.
   
-- Los centros de costos con menor gasto son "Administración y Dirección con 0,58MILL
+- Los centros de costos con menor gasto son "Administración y Dirección con 0,58 mill.
   
 - Las variaciones entre centro de costo se muestran prudentes y equilibradas en relación a la venta 
 
@@ -193,7 +193,7 @@ La empresa está vendiendo más que el año pasado, pero gastando más rápido d
 
 ## 💭Recomendaciones
 
-- Revisar a fondo gastos en Tecnología y Marketing (Gastos no presupuestados, relación costo/beneficio, si es gasto recurrente que se debe agregar al 2026 o esta relacionado a un proyecto específico)
+- Revisar a fondo gastos en Tecnología y Marketing (Gastos no presupuestados, relación costo/beneficio, si es gasto recurrente que se debe agregar al 2026 o está relacionado a un proyecto específico)
   
 - Replantear supuestos utilizados para la elaboración del presupuesto 2025
 
