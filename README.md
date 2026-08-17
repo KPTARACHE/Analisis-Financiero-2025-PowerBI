@@ -19,12 +19,6 @@
 
 Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita un análisis financiero que permita identificar las posibles causas para la toma de decisiones de la gerencia. 
 
-  ⚠️Principales problemas de datos:
-
-  - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente.
-
-  - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una pérdida del 8% de los datos.
-
   🎯💡Objetivo del proyecto y plan de acción
   
 🎯El objetivo principal del proyecto es elaborar un Dashboard que permita visualizar de forma clara y eficiente el resultado financiero del periodo 2025 y compararlo vs presupuesto y año anterior para identificar posibles factores que interfirieron en el no cumplimiento del presupuesto.
@@ -44,7 +38,13 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
    - Resultados
 
   - Conclusión y recomendaciones
-    
+
+  ⚠️Principales problemas de datos:
+
+  - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente).
+
+  - Posterior a la limpieza quedaron 3.176 filas de 3.452 lo que significa una pérdida del 8% de los datos.
+
 ---
 
 ## 🗂️Resultados Técnicos
