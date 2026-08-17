@@ -1,0 +1,53 @@
+
+let
+  Origen = Excel.Workbook(File.Contents("C:\Users\kelly\Desktop\Paola\Curso IPS Datax\Power BI\Proyecto\Datos_Dashboard_Finanzas.xlsx"), null, true),
+  #"Navegación 1" = Origen{[Item = "FactFinanzasRaw", Kind = "Table"]}[Data],
+  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Navegación 1", {{"ID_Registro", type text}, {"CuentaID", type text}, {"CentroCostoID", type text}, {"Escenario", type text}, {"Moneda", type text}}, "es"),
+    #"Filas filtradas" = Table.SelectRows(#"Tipo de columna cambiado", each true),
+    #"Valor reemplazado" = Table.ReplaceValue(#"Filas filtradas","sin fecha","",Replacer.ReplaceValue,{"Fecha"}),
+    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","00/01/2024","",Replacer.ReplaceValue,{"Fecha"}),
+    #"Filas filtradas1" = Table.SelectRows(#"Valor reemplazado1", each true),
+    #"Valor reemplazado2" = Table.ReplaceValue(#"Filas filtradas1","31/02/2025","",Replacer.ReplaceValue,{"Fecha"}),
+    #"Valor reemplazado3"= Table.TransformColumns(#"Valor reemplazado2", {"Fecha", each if _ = "" then null else _, type text}),
+    #"Rellenar hacia abajo" = Table.FillDown(#"Valor reemplazado3",{"Fecha"}),
+    #"Tipo cambiado" = Table.TransformColumnTypes(#"Rellenar hacia abajo",{{"Fecha", type date}}),
+    #"Filas filtradas2" = Table.SelectRows(#"Tipo cambiado", each ([CuentaID] <> null) and ([CentroCostoID] <> null)),
+    #"Valor reemplazado4" = Table.ReplaceValue(#"Filas filtradas2","Ppto","Presupuesto",Replacer.ReplaceText,{"Escenario"}),
+    #"Filas filtradas3" = Table.SelectRows(#"Valor reemplazado4", each true),
+    #"Valor reemplazado5" = Table.ReplaceValue(#"Filas filtradas3","Presup","Presupuesto",Replacer.ReplaceText,{"Escenario"}),
+    #"Valor reemplazado6" = Table.ReplaceValue(#"Valor reemplazado5","Presupuestouesto","Presupuesto",Replacer.ReplaceText,{"Escenario"}),
+    #"Moneda rellenada" = Table.TransformColumns(#"Valor reemplazado6", {"Moneda", each if _ = null or _ = "" then "USD" else _, type text}),
+    #"Valor reemplazado7" = Table.TransformColumns(#"Moneda rellenada", {{"Monto", each 
+    let
+        Original = _,
+        ValorFinal =
+            if Original = null then null
+            else if Value.Is(Original, type number) then Number.Round(Original, 2)
+            else
+                let
+                    TextoBase = Text.Trim(Text.Replace(Text.Replace(Text.From(Original), "USD", ""), "$", "")),
+                    TieneParentesis = Text.StartsWith(TextoBase, "(") and Text.EndsWith(TextoBase, ")"),
+                    Texto = if TieneParentesis then Text.Range(TextoBase, 1, Text.Length(TextoBase) - 2) else TextoBase,
+                    TieneComa = Text.Contains(Texto, ","),
+                    TienePunto = Text.Contains(Texto, "."),
+                    PosComa = if TieneComa then Text.PositionOf(Texto, ",", Occurrence.Last) else -1,
+                    PosPunto = if TienePunto then Text.PositionOf(Texto, ".", Occurrence.Last) else -1,
+                    DigitosDespuesComa = if TieneComa then Text.Length(Texto) - PosComa - 1 else 0,
+                    ValorAbs =
+                        if Texto = "" or Texto = "N/C" or Texto = "pendiente" then null
+                        else if TieneComa and TienePunto then
+                            if PosPunto > PosComa then Number.FromText(Text.Remove(Texto, {","}), "en-US")
+                            else Number.FromText(Text.Replace(Text.Remove(Texto, {"."}), ",", "."), "en-US")
+                        else if TieneComa and DigitosDespuesComa <= 2 then Number.FromText(Text.Replace(Texto, ",", "."), "en-US")
+                        else if TieneComa then Number.FromText(Text.Remove(Texto, {","}), "en-US")
+                        else Number.FromText(Texto, "en-US")
+                in
+                    if ValorAbs = null then null
+                    else if TieneParentesis then -ValorAbs
+                    else ValorAbs
+    in
+        ValorFinal
+    , type nullable number}}),
+    #"Filas filtradas4" = Table.SelectRows(#"Valor reemplazado7", each ([Moneda] = "USD") and ([Monto] <> null) and ([CuentaID] <> "Cta_9999"))
+in
+    #"Filas filtradas4"
