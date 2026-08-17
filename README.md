@@ -38,6 +38,7 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
    - Resultados
 
   - Conclusión y recomendaciones
+    
 
   ⚠️Principales problemas de datos:
 
