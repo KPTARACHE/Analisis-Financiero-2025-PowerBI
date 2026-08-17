@@ -180,7 +180,7 @@ Variación 2025 vs 2024
 
 - Crecimiento vs 2024 en venta +3,6% pero caída en EBITDA -0,6% y utilidad Neta -1,2%, a pesar de generar mayores ingresos estos se ven absorbidos casi en su totalidad por mayor costo, sin embargo la salud financiera continua siendo buena
 
-- El presupuesto fue extremadamente optimista esperando un crecimiento de más de 5% en utilidad pero las ventas no alcanzaron la meta y los costos por el contrario fueron mayores.
+- El presupuesto fue extremadamente optimista esperando un crecimiento de más de 5% en utilidad pero las ventas no alcanzaron la meta y los costos por el contrario fueron mayores
 
 - Los sobregastos más significativos fueron en los centros de costos de Tecnología (+29%) y seguido de marketing (+30%)
  
@@ -188,7 +188,7 @@ Variación 2025 vs 2024
 
 ## 📋Conclusiones
 
-La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura — principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logró retribuir con el incremento de ventas esperado para compensar este sobregasto; El presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
+La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura, principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logró retribuir con el incremento de ventas esperado para compensar este sobregasto; el presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
 
 ---
 
@@ -198,7 +198,7 @@ La empresa está vendiendo más que el año pasado, pero gastando más rápido d
   
 - Replantear supuestos utilizados para la elaboración del presupuesto 2025
 
-- Crear escenarios de sensibilidad que permitan revisar si estamos frente a un mal pronóstico real o frente a un escenario poco realista.
+- Crear escenarios de sensibilidad que permitan revisar si estamos frente a un mal pronóstico real o frente a un escenario poco realista
 
 
 
