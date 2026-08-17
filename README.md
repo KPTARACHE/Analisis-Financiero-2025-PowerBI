@@ -41,9 +41,9 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
     
 ---
 
-## Resultados
+## 🗂️Resultados Tecnicos
 
-  ## Limpieza de datos
+  ## 🔍Limpieza de datos
 
 Problemas detectados por columnas.
 
@@ -97,27 +97,107 @@ Problemas detectados por columnas.
 
 ---
 
-## Modelado
+## 🪡Modelado
 
 Modelo estrella
 
-Tabla de hechos facturación relacionada a las dimensiones de cuenta contable, centro de costo, escenario y tabla de calendario, adicionalmente se crearon las tablas de medidas, conceptos para la matriz de estado de resultados, PuenteUtilidad para el Waterfall de utilidad y UltimaActualizacion para indicar en que fecha se actualizo el Dashboard
+Tabla de hechos facturación (FactFinanzasRaw) relacionada a las dimensiones de cuenta contable, centro de costo, escenario y calendario, adicionalmente se crearon las tablas de "Medidas", "Conceptos" para la matriz de estado de resultados, "PuenteUtilidad" para el Waterfall de utilidad y "UltimaActualizacion" para indicar en que fecha se actualizaron los datos del Dashboard (Muestra los datos existentes en las BBDD a dicha fecha)
 
 <img width="1045" height="492" alt="Vista de Modelo" src="https://github.com/user-attachments/assets/64df9a37-02dd-4203-8ab7-830e75a54fb5" />
 
+## 📐Medidas DAX
 
-## Medidas DAX
 
-## Dashboard
 
-## Insight claves del negocio
 
-## Visualizaciones
 
-## Conclusiones
 
-## Recomendaciones
 
+
+
+
+
+
+## 📊📈Dashboard
+
+Datos del periodo 2025
+
+<img width="820" height="520" alt="Dashboard 2025" src="https://github.com/user-attachments/assets/38fa7653-5a28-44cf-bc4d-3ad42672a68a" />
+
+Datos del periodo 2024
+
+<img width="825" height="520" alt="Dashboard 2024" src="https://github.com/user-attachments/assets/12a264e7-6021-48c7-a543-57c0aaf984a2" />
+
+Variación 2025 vs 2024
+
+<img width="336" height="301" alt="Variación año anterior" src="https://github.com/user-attachments/assets/ad17c66f-0839-4c3b-9cd3-1456af759aaa" />
+
+---
+
+## 📊Resultados Financieros 
+
+    ## Tarjetas KPI´s a destacar 
+
+    <img width="1146" height="169" alt="Tarjetas KPI´s" src="https://github.com/user-attachments/assets/60d44f08-7b8c-450a-b243-aae051a32259" />
+
+<img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/9751631e-c58a-4b01-ac4e-28b3627aedd6" />
+<img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/d36cd882-65ca-4f04-b75d-a34cb95b5976" />
+
+- Margen bruto de 71% esto es un indicativo muy bueno para un negocio donde sus costos directos representan solo el 29% de la venta generando gran utilidad
+
+- EBITDA de 4MILL con una venta de 8MILL esto excelente la empresa tiene capacidad para cubrir aumento de costos o caída en venta
+
+- Utilidad Neta de 4MILL es decir, la depreciación, intereses y amortización no representan gran impacto dentro del resultado
+
+    ## Gastos por centro de costo 
+
+<img width="351" height="189" alt="Gastos por centro de costo" src="https://github.com/user-attachments/assets/a6cb0d58-83f9-4f01-bec8-1496c195cb3d" />
+
+- El centro de costo con mayor gasto es "Tecnología" con 0,84MILL
+  
+- Los centro de costo con menor gasto son "Administración y Dirección con 0,58MILL
+  
+- Las variaciones entre centro de costo se muestran prudente y equilibradas en relación a la venta 
+
+    ## Evolución mensual de ingresos
+
+<img width="491" height="217" alt="Evolución mensual" src="https://github.com/user-attachments/assets/613ae914-0811-458e-bab2-5c81ba6e8b71" />
+
+- Los ingresos mantienen un comportamiento similar sin variaciones abruptas
+  
+- Hay que destacar las caída mas significativas en mayo, junio y diciembre, bajo los 0,6MILL pero es importante mencionar que puede ser por estacionalidad debido a que tanto junio como diciembre están mapeadas así en presupuesto
+  
+- Enero presenta una caía significativa vs presupuesto pero con crecimiento vs 2024
+
+      ## Estado de resultado
+  
+<img width="660" height="200" alt="P L" src="https://github.com/user-attachments/assets/514e31f0-6b82-4b2f-b5bc-335784cf4f65" />
+
+-  A pesar de que ninguna línea del P&L cumple con el presupuesto asignado la salud financiera del negocio es excelente
+  
+-  Cuenta con excelente margen, EBITDA y Utilidad
+  
+-  Revisando las variaciones vs 2024 también se detecta que hay crecimiento en ventas y margen bruto y a pesar que el EBITDA y Utilidad disminuyen 1 punto aproximadamente cada uno, la salud financiera sigue siendo muy buena
+
+## 📍Insight claves del negocio
+
+- Crecimiento vs 2024 en venta +3,6% pero caída en EBITDA -0,6% y utilidad Neta -1,2%, a pesar de generar mayores ingresos estos se ven absorbidos casi en su totalidad por mayor costo, sin embargo la salud financiera continua siendo buena
+
+- EL presupuesto fue extremadamente optimista esperando un crecimiento de mas de 5% en utilidad pero las ventas no alcanzaron la meta y los costos por el contrario fueron mayores.
+
+- Los sobregastos mas significativos fueron en los centros de costos de Tecnología +29% y seguido de marketing +30%
+ 
+---
+
+## 📋Conclusiones
+
+La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura — principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logro retribuir con el incremento de venta esperado para compensar este sobregasto; El presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
+
+---
+
+## 💭Recomendaciones
+
+- 
 
 
 
