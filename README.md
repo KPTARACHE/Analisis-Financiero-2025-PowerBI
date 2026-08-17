@@ -40,7 +40,7 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
   - Conclusión y recomendaciones
     
 
-  ⚠️Principales problemas de datos:
+⚠️Principales problemas de datos:
 
   - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente).
 
