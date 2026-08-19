@@ -5,7 +5,7 @@
 
 ---
 
-## 💻Stack Tecnológico
+## Stack Tecnológico
 
 | Herramienta | Función | Lenguaje / Formato |
 | :--- | :--- | :---: |
@@ -15,15 +15,15 @@
 
 ---
 
-## 📑Contexto del negocio
+## Contexto del negocio
 
 Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita un análisis financiero que permita identificar las posibles causas para la toma de decisiones de la gerencia. 
 
-  🎯💡Objetivo del proyecto y plan de acción
+  Objetivo del proyecto y plan de acción
   
-🎯El objetivo principal del proyecto es elaborar un Dashboard que permita visualizar de forma clara y eficiente el resultado financiero del periodo 2025 y compararlo vs presupuesto y año anterior para identificar posibles factores que interfirieron en el no cumplimiento del presupuesto.
+El objetivo principal del proyecto es elaborar un Dashboard que permita visualizar de forma clara y eficiente el resultado financiero del periodo 2025 y compararlo vs presupuesto y año anterior para identificar posibles factores que interfirieron en el no cumplimiento del presupuesto.
     
-💡 Para lograr el objetivo se ejecutó lo siguiente:
+  Para lograr el objetivo se ejecutó lo siguiente:
 
   - Carga de BBDD a Power BI
     
@@ -40,7 +40,7 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
   - Conclusión y recomendaciones
     
 
-⚠️Principales problemas de datos:
+Principales problemas de datos:
 
   - Calidad de base de datos (Celdas vacías, formatos inválidos o inconsistente, datos no normalizados, ID inexistente).
 
@@ -48,13 +48,13 @@ Empresa no cumplió con el presupuesto anual del periodo 2025 por cual necesita 
 
 ---
 
-## 🗂️Resultados Técnicos
+## Resultados Técnicos
 
-  ## 🔍Limpieza de datos
+  ## Limpieza de datos
 
 Problemas detectados por columnas.
 
-🗓️Fecha
+Fecha
 
 | Problema | Descripción |
 | :--- | :--- |
@@ -66,7 +66,7 @@ Problemas detectados por columnas.
 | **Bug de proceso #1** | El paso "Rellenar hacia abajo" quedó ejecutándose antes de reemplazar los valores malos por blanco — por eso esas celdas nunca se llenaban. |
 | **Bug de proceso #2** | Al reemplazar valores por "vacío", Power Query los dejó como texto vacío `""` en vez de `null` real — y "Rellenar hacia abajo" solo actúa sobre `null`. |
 
-💰Monto
+Monto
 
 | Problema | Descripción |
 | :--- | :--- |
@@ -75,13 +75,13 @@ Problemas detectados por columnas.
 | **Bug de conversión #1** | La lógica inicial asumía que cualquier coma era separador de miles — números como `5258,68` (decimal) se inflaban ~100x a `525868`. |
 | **Bug de conversión #2** | Cuando Excel ya traía el valor como número real (no texto), `Text.From()` lo convertía arrastrando ruido de punto flotante (`41925,979999999996`) que la lógica de texto interpretaba como separador de miles — inflando algunos montos a cuatrillones. |
 
-📚Escenario
+Escenario
 
 | Problema | Descripción |
 | :--- | :--- |
 | **Categorías inconsistentes** | `Ppto`, `Presup` y `Presupuesto` referían a lo mismo. |
 
-🔑ID_
+ID_
 
 | Problema | Descripción |
 | :--- | :--- |
@@ -90,7 +90,7 @@ Problemas detectados por columnas.
 | **CuentaID inexistente** | 38 filas con `Cta_9999`, un código que no existe en `DimCuentas`. |
 | **Moneda vacía** | Filas sin moneda asignada`"USD"` |
 
-⚠️Impactos post limpieza y confiabilidad del dato
+Impactos post limpieza y confiabilidad del dato
 
 | Motivo de exclusión | Cantidad de filas | Impacto en monto USD |
 | :--- | :---: | ---: |
@@ -104,7 +104,7 @@ Problemas detectados por columnas.
 
 ---
 
-## 🪡Modelado
+## Modelado
 
 Modelo estrella
 
@@ -112,21 +112,22 @@ Tabla de hechos facturación (FactFinanzasRaw) relacionada a las dimensiones de 
 
 <img width="1045" height="492" alt="Vista de Modelo" src="https://github.com/user-attachments/assets/64df9a37-02dd-4203-8ab7-830e75a54fb5" />
 
-## 📐Medidas DAX
+## Medidas DAX
 
 <img width="197" height="299" alt="Medidas" src="https://github.com/user-attachments/assets/a2e0dd03-8828-4971-9529-478860de6a61" />
 
 Se crearon 168 medidas agrupadas por carpetas para una mejor organización y visualización de datos 
 
-## 📊📈Dashboard
+## Dashboard
 
 Datos del periodo 2025
 
-<img width="820" height="520" alt="Dashboard 2025" src="https://github.com/user-attachments/assets/38fa7653-5a28-44cf-bc4d-3ad42672a68a" />
+<img width="827" height="533" alt="Dashboard 2025" src="https://github.com/user-attachments/assets/f8ce48ed-ea79-45b1-98b8-4fecaaa2a51b" />
 
 Datos del periodo 2024
 
-<img width="825" height="520" alt="Dashboard 2024" src="https://github.com/user-attachments/assets/12a264e7-6021-48c7-a543-57c0aaf984a2" />
+<img width="827" height="523" alt="Dashboard 2024" src="https://github.com/user-attachments/assets/863cf9f7-563b-48ee-8349-06dadb911d05" />
+
 
 Variación 2025 vs 2024
 
@@ -134,7 +135,7 @@ Variación 2025 vs 2024
 
 ---
 
-## 📊Resultados Financieros 
+## Resultados Financieros 
 
   ## Tarjetas KPI´s a destacar 
 
@@ -176,7 +177,7 @@ Variación 2025 vs 2024
   
 -  Revisando las variaciones vs 2024 también se detecta que hay crecimiento en ventas y margen bruto y a pesar de que el EBITDA y Utilidad disminuyen 1 punto aproximadamente cada uno, la salud financiera sigue siendo muy buena
 
-## 📍Insights clave del negocio
+## Insights clave del negocio
 
 - Crecimiento vs 2024 en venta +3,6% pero caída en EBITDA -0,6% y utilidad Neta -1,2%, a pesar de generar mayores ingresos estos se ven absorbidos casi en su totalidad por mayor costo, sin embargo la salud financiera continua siendo buena
 
@@ -186,21 +187,16 @@ Variación 2025 vs 2024
  
 ---
 
-## 📋Conclusiones
+## Conclusiones
 
 La empresa está vendiendo más que el año pasado, pero gastando más rápido de lo que factura, principalmente por Tecnología que puede estar fuertemente relacionado con el crecimiento tecnológico a nivel mundial y ninguna empresa debería quedarse atrás en esta materia y seguido de Marketing que a pesar de la mayor inversión no logró retribuir con el incremento de ventas esperado para compensar este sobregasto; el presupuesto de ventas 2025 fue poco realista, lo que infla artificialmente la sensación de "mal desempeño" cuando en realidad el problema de fondo está en el control de gastos operativos y no en las ventas.
 
 ---
 
-## 💭Recomendaciones
+## Recomendaciones
 
 - Revisar a fondo gastos en Tecnología y Marketing (Gastos no presupuestados, relación costo/beneficio, si es gasto recurrente que se debe agregar al 2026 o está relacionado a un proyecto específico)
   
 - Replantear supuestos utilizados para la elaboración del presupuesto 2025
 
 - Crear escenarios de sensibilidad que permitan revisar si estamos frente a un mal pronóstico real o frente a un escenario poco realista
-
-
-
-
-
