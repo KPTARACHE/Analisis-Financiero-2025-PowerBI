@@ -122,16 +122,24 @@ Se crearon 168 medidas agrupadas por carpetas para una mejor organización y vis
 
 Datos del periodo 2025
 
+
 <img width="827" height="533" alt="Dashboard 2025" src="https://github.com/user-attachments/assets/f8ce48ed-ea79-45b1-98b8-4fecaaa2a51b" />
 
 Datos del periodo 2024
+
 
 <img width="827" height="523" alt="Dashboard 2024" src="https://github.com/user-attachments/assets/863cf9f7-563b-48ee-8349-06dadb911d05" />
 
 
 Variación 2025 vs 2024
 
+
 <img width="336" height="301" alt="Variación año anterior" src="https://github.com/user-attachments/assets/ad17c66f-0839-4c3b-9cd3-1456af759aaa" />
+
+Interacción con el Dashboard
+
+
+https://github.com/user-attachments/assets/001f61c1-4491-4400-9ec7-690beb95cb81
 
 ---
 
