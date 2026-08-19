@@ -1,6 +1,6 @@
 
 let
-  Origen = Excel.Workbook(File.Contents("C:\Users\kelly\Desktop\Paola\Curso IPS Datax\Power BI\Proyecto\Datos_Dashboard_Finanzas.xlsx"), null, true),
+  Origen = Excel.Workbook(File.Contents("C:\Datos\..."), null, true),
   #"Navegación 1" = Origen{[Item = "FactFinanzasRaw", Kind = "Table"]}[Data],
   #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Navegación 1", {{"ID_Registro", type text}, {"CuentaID", type text}, {"CentroCostoID", type text}, {"Escenario", type text}, {"Moneda", type text}}, "es"),
     #"Filas filtradas" = Table.SelectRows(#"Tipo de columna cambiado", each true),
